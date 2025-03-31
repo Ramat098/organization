@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <!-- Partie gauche : Réseaux sociaux & Newsletter -->
+        <div class="lefticons">
+            <div class="social-icons">
+                <a href="#" class="social-link"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-tiktok fa-lg"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-twitter fa-lg"></i></a>
+            </div>
+            <div class="newsletter-container">
+                <a href="#" id="newsletter-icon">
+                    <i class="fa-regular fa-envelope-open fa-lg"></i>
+                    <span>S'inscrire à la newsletter pour bénévole</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Partie droite : Boutique & Espace Donateur -->
+        <div class="rightspace">
+            <a href="donateur.html" class="btn">Espace Donateur</a>
+            <a href="boutique.html" class="btn">Boutique</a>
+        </div>
+    </header>
+
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="images/choose2.gif" alt="Logo">
+    </div>
+
+    <!-- Barre de Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">Qui sommes-nous</a></li>
+            <li><a href="boutique.html">Boutique</a></li>
+            <li><a href="don.html">Faire un don</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+        
+    <!-- Formulaire de la Newsletter (Masqué par défaut) -->
+    <div id="newsletter-modal" class="hidden">
+        <div class="newsletter-box">
+            <h2>📢 S'inscrire à la newsletter</h2>
+            <p><strong>Deviens bénévole et accompagne-nous tout au long de ce projet.</strong></p>
+            <label for="prenom">Votre prénom</label>
+            <input type="text" id="prenom" placeholder="Prénom">
+            <label for="email">Votre adresse email *</label>
+            <input type="email" id="email" placeholder="ex: abc@xyz.com">
+            <p class="notice">Veuillez renseigner votre adresse email pour vous inscrire.</p>
+            <div class="checkbox">
+                <input type="checkbox" id="accept">
+                <label for="accept">J'accepte de recevoir des emails et j'ai lu la <a href="#">politique de confidentialité</a>.</label>
+            </div>
+            <button id="subscribe-btn">S'abonner</button>
+            <button id="close-btn">❌ Fermer</button>
+        </div>
+    </div>
+        <!-- Section 1 : Introduction -->
+        <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-item-p">
+                <div class="hero-text">
+                    <h1>Choose to Change Africa : <br> Ensemble, transformons l'avenir de l'Afrique</h1> <br>
+                    <p>Rejoignez notre mission pour un avenir durable en Afrique. Faites un don ou achetez nos produits solidaires !</p>
+                    <div class="buttonse">
+                        <a href="don.html" class="boutn">Faire un don</a>
+                        <a href="boutique.html" class="boutn">Faire un achat</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                <img src="images/afrique.png" class="d-block w-100" alt="Image 1">
+                </div>
+                </div>
+              </div>
+            
+              <div class="carousel-item">
+                <div class="imageredute">
+                <img src="images/ecofriendly.jpeg" class="d-block w-100" alt="Image 2">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="imageredute">
+                <img src="images/objectif.jpeg" class="d-block w-100" alt="Image 3">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+    <div class="about-section">
+        <h1 class="main-title">Qui sommes-nous ?</h1>
+    
+        <div class="content">
+            <!-- Section "Notre histoire" -->
+            <div class="history">
+                <h2>Notre histoire</h2>
+                <p>Fondée sur l’amour de la nature et l’engagement citoyen, l’ONG "<strong>Choose to Change Africa</strong>" œuvre pour un environnement propre et durable. Nous croyons en la transformation de notre monde par des actions concrètes, allant du recyclage à la plantation d’arbres.</p>
+                <a href="lien-vers-la-page" class="read-more">➕ En savoir plus</a>
+            </div>
+            
+    
+            <!-- Cercle avec l’image et les valeurs -->
+            <div class="circle-container">
+                <div class="image">
+                    <img src="images/choose2.gif" alt="Choose to Change World">
+                </div>
+                <svg class="circle-svg" viewBox="0 0 450 450">
+                    <circle cx="225" cy="225" r="190" fill="none" stroke="#2e8b57" stroke-width="4"/>
+                    
+                    <!-- Points -->
+                    <circle cx="225" cy="25" r="8" fill="#8B4513"/>
+                    <circle cx="380" cy="90" r="8" fill="#8B4513"/>
+                    <circle cx="425" cy="225" r="8" fill="#8B4513"/>
+                    <circle cx="380" cy="360" r="8" fill="#8B4513"/>
+                    <circle cx="225" cy="420" r="8" fill="#8B4513"/>
+                    <circle cx="70" cy="360" r="8" fill="#8B4513"/>
+                    <circle cx="25" cy="225" r="8" fill="#8B4513"/>
+                    <circle cx="70" cy="90" r="8" fill="#8B4513"/>
+                </svg>
+    
+                <!-- Légendes des valeurs et actions -->
+                <div class="benefits">
+                    <p style="top: 10px; left: 50%;">🌍 Protéger l’environnement</p>
+                    <p style="top: 70px; left: 80%;">🌱 Encourager l’économie verte</p>
+                    <p style="top: 190px; left: 92%;">🔄 Promouvoir le recyclage</p>
+                    <p style="top: 310px; left: 80%;">📚 Éduquer les jeunes</p>
+                    <p style="top: 400px; left: 45%;">🌿 Sensibilisation</p>
+                    <p style="top: 310px; left: 5%;">🌳 Reboisement</p>
+                    <p style="top: 190px; left: -10%;">🌍 Consommation responsable</p>
+                    <p style="top: 70px; left: 8%;">♻️ Économie circulaire</p>
+                    <p style="top: 160px; left: 60%;">🗑️ Poubelles publiques</p>
+                    <p style="top: 250px; left: 95%;">🚻 Toilettes publiques</p>
+                    <p style="top: 330px; left: 5%;">🌿 Plantes ornementales</p>
+                    <p style="top: 50px; left: 20%;">💡 Nos valeurs</p>
+                </div>
+            </div>
+        </div>
+        <div class="extra-info">
+            <p>🌎 Agir aujourd'hui pour demain</p>
+            <p>💚 Rejoignez-nous pour un impact positif</p>
+        </div>
+    </div>
+    
+
+    <section class="news">
+        <h2>Nos actualités</h2>
+        <div class="news-container">
+            <!-- Grande actualité à gauche -->
+            <div class="news-main">
+                <img src="images/salubrite.jpeg" alt="Journée de salubrité">
+                <div class="news-content">
+                    <h3>Journée de salubrité</h3>
+                    <p>Participez à notre grande journée de nettoyage pour un environnement plus sain !</p>
+                    <a href="#">En savoir plus</a>
+                </div>
+            </div>
+            
+            <!-- Deux petites actualités à droite -->
+            <div class="news-side">
+                <div class="news-item">
+                    <img src="images/jeunesse.jpeg" alt="Éducation environnementale">
+                    <div class="news-content">
+                        <h3>Éducation environnementale</h3>
+                        <p>Parce que les enfants d'aujourd'hui sont les adultes de demain !</p>
+                        <a href="#">En savoir plus</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="images/despoubellles.jpeg" alt="Poubelles dans les rues">
+                    <div class="news-content">
+                        <h3>Poubelles dans les rues</h3>
+                        <p>Nous avons installé des poubelles pour garder nos rues propres.</p>
+                        <a href="#">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+        <!--section 4-->
+        <section class="section4">
+            <h1>Boutique Solidaire</h1>
+    
+            <div class="h2-containera">
+                <h2>1</h2>
+                <h2>2</h2>
+                <h2>3</h2>
+            </div>
+    
+            <div class="contenta">
+                <div>
+                    <h3>Impact Direct</h3>
+                    <p>Chaque achat finance nos projets environnementaux en Afrique.</p>
+                </div>
+                <div>
+                    <h3>Produits Éthiques</h3>
+                    <p>Découvrez une sélection de vêtements, détergents et accessoires éco-responsables.</p>
+                </div>
+                <div>
+                    <h3>Soutien Local</h3>
+                    <p>En achetant nos produits, vous soutenez les artisans et les communautés locales.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section-containeria">
+            <img src="images/collection.jpeg" alt="Image gauche" class="image4" width="350" height="auto">
+            
+            <div class="text-containeria">
+                <h2>Des vêtements inspirés de nos patriotes</h2>
+                <p>Découvrez nos collections de vêtements, d'accessoires, de produits d'hygiène, et bien plus encore. Tout ce dont vous avez besoin se trouve sur notre site.</p>
+                <a href="boutique.html" class="btne">Boutique</a>
+            </div>
+        
+            <img src="images/paniershop.png" alt="Image droite" class="image5">
+        </section>
+
+        <h2 class="donh">DON</h2>
+        <div class="don-container"> 
+            <div class="don-options">
+                <div class="don-item">
+                    <span class="don-number">1</span>
+                    <div class="don-text">
+                        <h3>Ponctuel</h3>
+                        <p>Un geste simple pour soutenir nos actions.</p>
+                    </div>
+                </div>
+                <div class="don-item">
+                    <span class="don-number">2</span>
+                    <div class="don-text">
+                        <h3>Mensuel</h3>
+                        <p>Un engagement régulier pour un impact durable.</p>
+                    </div>
+                </div>
+                <div class="don-item">
+                    <span class="don-number">3</span>
+                    <div class="don-text">
+                        <h3>Legs</h3>
+                        <p>Un héritage pour les générations futures.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="don-image">
+                <img src="images/donate.jpeg" alt="Planter un arbre">
+                <a href="don.html" class="don-button">Faire un don</a> <!-- Le bouton -->
+            </div>
+        </div>
+        <div class="partenariat">
+            <h2>Ils nous font confiance !</h2>
+            <div class="leslogos">
+                <div class="lelogo"><img src="images/zerodechets.png" alt="Partenaire 1"></div>
+                <div class="lelogo"><img src="images/unicef.png" alt="Partenaire 2"></div>
+                <div class="lelogo"><img src="images/apiafrique.png" alt="Partenaire 3"></div>
+                <div class="lelogo"><img src="images/grenpeace.png" alt="Partenaire 4"></div>
+            </div>
+        </div>
+      
+
+
+   <!-- Footer -->
+   <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="images/planette.png" alt="Logo ONG">
+        </div>
+        <p>&copy; 2025 Choose to Change Africa. Tous droits réservés.</p>
+        <div class="footer-links">
+            <a href="#">À propos</a> | 
+            <a href="#">Nos partenaires</a> | 
+            <a href="#">Contact</a> | 
+            <a href="#">Politique de confidentialité</a> | 
+            <a href="#">Mentions légales</a>
+        </div>
+        <div class="social-media">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Instagram</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+        <p>Adresse : [Sénégal]</p>
+        <p>Téléphone : [+221 78 731 73 20]</p>
+        <p>Email : <a href="mailto:[email@exemple.com]">[contact@choosetochangeAfrica.org]</a></p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
