@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produit - APLB Kit Soin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        .product-container {
+            display: flex;
+            width: 80%;
+            max-width: 1000px;
+            align-items: center;
+        }
+        .product-image-container {
+            flex: 40%;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .product-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product-details {
+            flex: 60%;
+            text-align: left;
+            padding-left: 20px;
+        }
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .product-price {
+            color: green;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .quantity-selector {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .quantity-selector button {
+            width: 40px;
+            height: 40px;
+            border: none;
+            background: #ddd;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .quantity-selector input {
+            width: 50px;
+            text-align: center;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            margin: 0 10px;
+        }
+        .add-to-cart {
+            background: green;
+            color: white;
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            display: block;
+            margin-top: 20px;
+        }
+        .back-button {
+            margin-top: 30px;
+            padding: 10px 15px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-container">
+        <div class="product-image-container">
+            <div class="product-image">
+                <img src="images/falla.jpeg" alt="falla">
+            </div>
+        </div>
+        <div class="product-details">
+            <div class="product-title"><h1> Fleur – L’Expression d’une Féminité Authentique</h1></div>
+            <p>Inspirée par l’élégance et la résilience des femmes africaines, la collection<strong>"Falla Fleur" </strong>incarne la force, la grâce et l’affirmation de soi. Chaque pièce est conçue avec des tissus légers et respirants, adaptés aux climats chauds, pour allier confort et raffinement. En rendant hommage à une figure emblématique du Sénégal, cette collection unique célèbre la beauté féminine sous toutes ses formes, tout en soutenant une mode éthique et engagée.</p>
+
+            <div class="product-price">30.000 CFA</div>
+            <div class="quantity-selector">
+                <button onclick="changeQuantity(-1)">-</button>
+                <input type="text" id="quantity" value="1" readonly>
+                <button onclick="changeQuantity(1)">+</button>
+            </div>
+            <button class="add-to-cart">AJOUTER AU PANIER</button>
+        </div>
+    </div>
+    <a href="boutique.html" class="back-button">← Retour à l'accueil</a>
+
+    <script>
+        function changeQuantity(amount) {
+            let quantityInput = document.getElementById('quantity');
+            let currentValue = parseInt(quantityInput.value);
+            if (currentValue + amount > 0) {
+                quantityInput.value = currentValue + amount;
+            }
+        }
+    </script>
+</body>
+</html>
