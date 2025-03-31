@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="don.css">
+</head>
+<body>
+    <header>
+        <!-- Partie gauche : Réseaux sociaux & Newsletter -->
+        <div class="lefticons">
+            <div class="social-icons">
+                <a href="#" class="social-link"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-tiktok fa-lg"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                <a href="#" class="social-link"><i class="fa-brands fa-twitter fa-lg"></i></a>
+            </div>
+            <div class="newsletter-container">
+                <a href="#" id="newsletter-icon">
+                    <i class="fa-regular fa-envelope-open fa-lg"></i>
+                    <span>S'inscrire à la newsletter pour bénévole</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Partie droite : Boutique & Espace Donateur -->
+        <div class="rightspace">
+            <a href="donateur.html" class="btn">Espace Donateur</a>
+            <a href="boutique.html" class="btn">Boutique</a>
+        </div>
+    </header>
+
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="images/choose2.gif" alt="Logo">
+    </div>
+
+    <!-- Barre de Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">Qui sommes-nous</a></li>
+            <li><a href="boutique.html">Boutique</a></li>
+            <li><a href="don.html">Faire un don</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulaire de la Newsletter (Masqué par défaut) -->
+    <div id="newsletter-modal" class="hidden">
+        <div class="newsletter-box">
+            <h2>📢 S'inscrire à la newsletter</h2>
+            <p><strong>Deviens bénévole et accompagne-nous tout au long de ce projet.</strong></p>
+            <label for="prenom">Votre prénom</label>
+            <input type="text" id="prenom" placeholder="Prénom">
+            <label for="email">Votre adresse email *</label>
+            <input type="email" id="email" placeholder="ex: abc@xyz.com">
+            <p class="notice">Veuillez renseigner votre adresse email pour vous inscrire.</p>
+            <div class="checkbox">
+                <input type="checkbox" id="accept">
+                <label for="accept">J'accepte de recevoir des emails et j'ai lu la <a href="#">politique de confidentialité</a>.</label>
+            </div>
+            <button id="subscribe-btn">S'abonner</button>
+            <button id="close-btn">❌ Fermer</button>
+        </div>
+    </div>
+
+    <section class="don-section">
+        <h1>Page de Don Particulier</h1>
+        <div class="cards-container">
+            <div class="card">
+                <h2>Mon Don</h2>
+                <label for="montant">Montant :</label>
+                <input type="number" id="montant" placeholder="Entrez le montant">
+            </div>
+
+            <div class="card">
+                <h2>Mes Coordonnées</h2>
+                <input type="text" id="nom" placeholder="Votre Nom">
+                <input type="email" id="email" placeholder="Votre Email">
+                <input type="tel" id="telephone" placeholder="Votre Téléphone">
+            </div>
+
+            <div class="card">
+                <h2>Mon Règlement</h2>
+                <div class="paiement-options">
+                    <i class="fa-brands fa-cc-paypal fa-2xl" style="color: #10da14;"></i>
+                    <i class="fa-brands fa-cc-visa fa-2xl" style="color: #6ae916;"></i>
+                    <i class="fa-brands fa-cc-mastercard fa-2xl" style="color: #30e40c;"></i>
+                    <img src="#">
+                    <img src="#">
+                    
+                </div>
+                <button onclick="effectuerDon()">Faire un Don</button> <br> <br>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/planette.png" alt="Logo ONG">
+            </div>
+            <p>&copy; 2025 Choose to Change Africa. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#">À propos</a> | 
+                <a href="#">Nos partenaires</a> | 
+                <a href="#">Contact</a> | 
+                <a href="#">Politique de confidentialité</a> | 
+                <a href="#">Mentions légales</a>
+            </div>
+            <div class="social-media">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Twitter</a>
+                <a href="#" target="_blank">LinkedIn</a>
+            </div>
+            <p>Adresse : [Sénégal]</p>
+            <p>Téléphone : [+221 78 731 73 20]</p>
+            <p>Email : <a href="mailto:[email@exemple.com]">[contact@choosetochangeAfrica.org]</a></p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
