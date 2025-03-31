@@ -1,0 +1,360 @@
+/* Styles généraux */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Barre de navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo personnalisé */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: maroon;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin: 0 5px;
+}
+
+/* Menu principal */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: #e74c3c;
+}
+
+/* Conteneur des catégories */
+.categories-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    grid-template-columns: repeat(4, 1fr);
+    z-index: 1000;
+    width: 500px; /* Augmente la largeur */
+    padding: 20px; /* Augmente l'espace intérieur */
+    gap: 15px;
+    border-radius: 10px; /* Coins arrondis */
+}
+
+/* Style des catégories */
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.category-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.category-item span {
+    margin-top: 5px;
+}
+
+.category-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Section d'accueil */
+.hero {
+    background: url('images/musso.jpeg') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    font-size: 32px;
+    color: maroon;
+}
+
+.hero hr {
+    width: 50%;
+    border: 1px solid white;
+}
+
+.hero p {
+    font-size: 19px;
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.collections {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.collection {
+    width: 350px; /* Agrandit la taille */
+    text-align: center;
+    position: relative;
+}
+
+.collection-title {
+    background: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    z-index: 2;
+}
+
+.collection img {
+    width: 100%;
+    height: 300px; /* Plus grande */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.collection-info {
+    background: rgba(240, 236, 236, 0.6); /* Transparent */
+    color: rgb(15, 15, 15);
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    top: -5px; /* Pour coller à l’image */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.collection-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.acheter-btn {
+    display: block;
+    background: #27ae60;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.acheter-btn:hover {
+    background: #219150;
+}
+/*essai*/
+
+.containerp {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+/* Style pour la grande image */
+.main-image {
+    width: 45%;
+    position: relative;
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+.overlay h1 {
+    font-size: 28px;
+}
+.overlay p{
+    font-size: 24px;
+}
+/* Style pour la section des produits */
+.products {
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.product {
+    text-align: center;
+}
+
+.product p {
+    font-size: 13px;
+}
+.product img {
+    width: 45px;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 15px;
+    color: green;
+}
+
+button {
+    background-color: #008000;
+    color: white;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+button:hover {
+    background-color: #005500;
+}
+
+.swiper {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden; /* Pour éviter tout débordement */
+    margin-top: 100px;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.swiper-slide img {
+    width: 200px;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+button {
+    background: green;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: black; /* Couleur des flèches */
+}
+.center {
+    text-align: center;
+}
+img .logocenter {
+    max-width: 300px; /* Ajuste la taille du logo */
+    height: auto;
+}
+/* Footer */
+  
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+.footer-logo img {
+    max-width: 180px; /* Image agrandie */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo img:hover {
+    transform: scale(1.1); /* Légère animation au survol */
+}
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
