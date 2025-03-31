@@ -1,0 +1,626 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+    background-color: #f8f8f8;
+}
+
+/* Icônes réseaux sociaux */
+.social-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Newsletter */
+.newsletter-container {
+    margin-top: 10px;
+}
+
+#newsletter-icon {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #3f3f3f;
+    font-weight: bold;
+}
+
+#newsletter-icon img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+/* Partie droite */
+.rightspace {
+    display: flex;
+    gap: 15px;
+}
+
+.rightspace .btn {
+    text-decoration: none;
+    background-color: #569404;
+    color: rgb(24, 24, 23);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Logo */
+.logo-container {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.logo-container img {
+    width: 250px;
+}
+
+/* Navigation */
+nav {
+    background: none;
+    padding: 10px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/* FORMULAIRE NEWSLETTER */
+#newsletter-modal {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    background: #ffe6e6;
+    border: 1px solid #d9534f;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#newsletter-modal h2 {
+    color: #d9534f;
+}
+
+#newsletter-modal input {
+    width: 90%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.notice {
+    font-size: 12px;
+    color: red;
+}
+
+.checkbox {
+    text-align: left;
+    font-size: 12px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#close-btn {
+    background-color: gray;
+}
+
+/* Masquer la boîte par défaut */
+.hidden {
+    display: none;
+}
+
+/* Section d'introduction */
+.carousel-item-p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 50px;
+    border: 1px solid green;
+}
+.hero-text {
+    width: 50%;
+}
+.hero-text p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+.buttonse {
+    margin-top: 20px;
+}
+.boutn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+}
+.imageredute {
+    border: 1px solid green;
+}
+.imageredute img {
+    max-width: 100%;
+    height: 600px;
+}
+/* Centrage du titre principal */
+.main-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #2e8b57;
+}
+
+/* Alignement global */
+.about-section {
+    padding: 40px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-section {
+    padding: 60px;
+}
+
+/* Alignement du contenu */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Section "Notre histoire" */
+.history {
+    width: 40%;
+    padding-right: 40px;
+}
+
+.history h2 {
+    font-size: 32px; /* Agrandir le titre */
+    font-weight: bold;
+    color: rgb(202, 18, 18);
+}
+.history p {
+    font-size: 17px;
+    color: #202020;
+}
+/* Style du bouton */
+.history .read-more {
+    display: inline-block;
+    margin-top: 15px; /* Ajout d'espace avec le texte */
+    padding: 10px 20px;
+    background-color:  rgb(167, 21, 21);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.history .read-more:hover {
+    background-color: #5A2D0C; /* Teinte plus foncée au survol */
+}
+
+/* Cercle et valeurs */
+.circle-container {
+    position: relative;
+    width: 400px; /* Cercle légèrement réduit */
+    height: 400px;
+    margin: 0 auto; /* Centrage */
+}
+
+.image { width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+
+.circle-svg {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+}
+
+/* Points sur le cercle */
+.benefits p {
+    position: absolute;
+    font-size: 14px; /* Réduction de la taille des textes des points */
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    width: 160px; /* Ajustement pour éviter les chevauchements */
+}
+.extra-info {
+    margin-top: 20px;
+}
+
+.extra-info p {
+    font-size: 19px;
+    font-weight: bold;
+    color: #2e8b57;
+    text-align: center;
+}
+/* Section principale */
+.news {
+    background: rgb(29, 29, 29); /* Fond sombre */
+    color: white;
+    padding: 30px;
+}
+
+/* Conteneur des actualités */
+.news-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Style des images */
+.news img {
+    width: 100%;
+    height: auto; /* Ajuste la hauteur */
+    max-height: 600px;
+    object-fit: contain; /* Coupe l'image pour bien l'adapter */
+    border-radius: 8px;
+}
+
+/* Grande actu à gauche */
+.news-main {
+    flex: 2;
+    background: rgb(61, 61, 61);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Conteneur des actus à droite */
+.news-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Style des actus à droite */
+.news-item {
+    background: rgb(61, 61, 61);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Contenu des news */
+.news-content {
+    padding: 10px;
+}
+
+/* Bouton en savoir plus */
+.news a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: rgba(180, 44, 3, 0.952);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.news a:hover {
+    background: #99e08a;
+}
+/*section 4*/
+.section4 {
+    width: 80%;
+    margin: 50px auto;
+    background: linear-gradient(
+      to right,
+      rgba(62, 71, 66, 0.9),
+      rgba(248, 184, 6, 0.9)
+    ),
+    url("images/shopspace.jpeg");
+  background-size: cover;
+}
+.section4 h1 {
+    font-size: 28px;
+}
+.h2-containera {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.h2-containera h2 {
+    flex: 1;
+    padding: 15px;
+    margin: 0 10px;
+    background: #4ff539; /* vert*/
+    padding: 20px;
+    width: 200px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 50% 100%, 0% 70%);
+    color: #0a0808;
+    font-size: 40px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.contenta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.contenta div {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    background: none; /* Pas de background */
+    text-align: center;
+}
+
+ .section4 h3{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.section4 p {
+    font-size: 22px;
+    color: white;
+}
+
+.section-containeria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.image5 {
+    width: 40%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.text-containeria {
+    max-width: 400px;
+}
+
+.text-containeria h2 {
+    color: maroon;
+    font-size: 33px;
+}
+
+.text-containeria p {
+    font-size: 19px;
+    color: #363636;
+}
+
+.btne {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #84c467;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.donh{
+    color: maroon;
+    font-size: 23px;
+}
+.don-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    max-width: 1100px;
+    margin: auto;
+    background: none;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative; 
+}
+
+.don-options {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.don-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 20px;
+}
+
+.don-number {
+    background: #ccc;
+    color: #000;
+    font-size: 25px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    border-right: 2px solid #ccc;
+    padding-right: 10px;
+}
+
+.don-text h3 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.don-text p {
+    margin: 0;
+    font-size: 20px;
+    color: #464545;
+}
+
+.don-image {
+    flex: 1;
+    text-align: right;
+    position: relative; /* Ajouté pour positionner le bouton en bas à droite */
+}
+
+.don-image img {
+    width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.don-button {
+    position: absolute;
+    bottom: 10px;
+    right: 20px; /* Positionné à 20px de la droite */
+    padding: 15px 30px;
+    background-color: maroon; /* Couleur du bouton */
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.don-button:hover {
+    background-color: green; /* Changement de couleur au survol */
+}
+
+
+.partenariat {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.partenariat h2 {
+    font-size: 36px; /* Titre plus grand */
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 40px; /* Espace sous le titre */
+}
+
+.leslogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; /* Augmente l'espace entre les logos */
+}
+
+.lelogo img {
+    max-width: 180px; /* Augmente la taille des logos */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.lelogo img:hover {
+    transform: scale(1.2); /* Zoom fluide au survol */
+}
+ 
+
+/* Footer */
+  
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+.footer-logo img {
+    max-width: 180px; /* Image agrandie */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo img:hover {
+    transform: scale(1.1); /* Légère animation au survol */
+}
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
